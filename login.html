@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+
+<div class="card p-4" style="width: 300px;">
+  <h3 class="text-center">Login</h3>
+  <form id="loginForm">
+    <input class="form-control mb-3" id="user" placeholder="Usuario" required>
+    <input type="password" class="form-control mb-3" id="pass" placeholder="Clave" required>
+    <button class="btn btn-primary w-100">Entrar</button>
+  </form>
+</div>
+
+<script>
+document.getElementById("loginForm").onsubmit = function(e){
+  e.preventDefault();
+  window.location.href = "menu.html";
+}
+</script>
+
+</body>
+</html>
